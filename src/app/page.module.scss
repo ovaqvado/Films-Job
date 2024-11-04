@@ -1,0 +1,211 @@
+@import './assets/styles/styles.scss';
+
+.title_btn {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 337px;
+}
+
+.title {
+	font-size: 48px;
+	font-family: $secondary-font;
+	font-weight: 700;
+	width: 564px;
+}
+
+.btn_res {
+	width: 225px;
+	height: 48px;
+	border-radius: 41px;
+	background: none;
+	cursor: pointer;
+	border: 1px solid $border-color;
+	color: $primary-color;
+	font-family: $primary-font;
+	font-size: 1rem;
+	font-weight: 400;
+	transition: 200ms;
+	&:hover {
+		border: 1px solid black;
+		opacity: 0.7;
+	}
+}
+
+.inputs_box {
+	display: flex;
+	flex-direction: row;
+	gap: 123px;
+	margin-top: 112px;
+	margin-bottom: 98px;
+}
+
+.input_container {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 14px;
+	width: 498px;
+}
+
+.input_column {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.label {
+	font-size: 15px;
+	font-weight: 400;
+	font-family: $primary-font;
+}
+
+.input {
+	font-size: 15px;
+	font-weight: 400;
+	font-family: $primary-font;
+	box-sizing: border-box;
+	border-radius: 6px;
+	border: 1px solid $border-color;
+	color: $primary-color;
+	width: 498px;
+	height: 54px;
+	outline: none;
+	padding-left: 18px;
+	padding-right: 18px;
+	&::placeholder {
+		font-size: 15px;
+		font-weight: 400;
+		opacity: 40%;
+		font-family: $primary-font;
+		color: $primary-color;
+	}
+}
+
+.ul {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	list-style: none;
+	background: rgba(160, 160, 160, 0.171);
+	padding: 10px;
+	border-radius: 5px;
+	gap: 5px;
+}
+
+.li {
+	font-size: 16px;
+	font-family: $primary-font;
+	border-bottom: 1px solid $border-color;
+	cursor: pointer;
+}
+
+.secondary_input {
+	margin-bottom: 6px;
+}
+
+.input_sinop {
+	font-size: 15px;
+	font-weight: 400;
+	font-family: $primary-font;
+	box-sizing: border-box;
+	border-radius: 6px;
+	border: 1px solid $border-color;
+	color: $primary-color;
+	width: 498px;
+	display: flex;
+	outline: none;
+	padding-left: 18px;
+	padding-top: 16px;
+	padding-right: 18px;
+
+	height: 157px;
+	resize: none;
+	&::placeholder {
+		font-size: 15px;
+		font-weight: 400;
+		opacity: 40%;
+		font-family: $primary-font;
+		color: $primary-color;
+	}
+}
+
+.unf {
+	margin-top: 24px;
+}
+
+// Dirty input
+.error {
+	border: 1px solid #be1f2a;
+}
+
+.error_text {
+	font-size: 14px;
+	font-family: $primary-font;
+	font-weight: 400;
+	color: #be1f2a;
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 370px;
+}
+
+.pag_btn {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 230px;
+	margin-left: 490px;
+}
+
+.pagination {
+	display: flex;
+	flex-direction: row;
+}
+
+.num_pag {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.5);
+	&:hover {
+		border: 1px solid $border-color;
+		border-radius: 50px;
+		color: #000000;
+	}
+}
+
+.btn_container {
+	position: relative;
+	align-items: center;
+	display: flex;
+	justify-content: left;
+	width: 248px;
+	height: 48px;
+}
+
+.next_btn {
+	position: absolute;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: regular;
+	font-family: $primary-font;
+	width: 248px;
+	height: 48px;
+	border: 1px solid $border-color;
+	padding-right: 20px;
+	border-radius: 41px;
+	background: #efefef;
+	&:disabled {
+		border: none;
+		cursor: default;
+	}
+}
+
+.arrow_img {
+	position: absolute;
+	margin-left: 200px;
+}
